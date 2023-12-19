@@ -1,8 +1,6 @@
-package be.intecBrussel;
+package be.intecBrussel.Animal;
 
-import java.util.Map;
-
-public class Dog extends Animal{
+public class Dog extends Animal {
 
     private boolean hasFoulBreath;
 

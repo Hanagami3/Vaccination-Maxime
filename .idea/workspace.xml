@@ -4,24 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="315a87d7-53f2-48de-8a25-559f8ca719ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/AnimalShelter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Disease.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Monkey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Treatable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Vaccinateable.java" afterDir="false" />
+    <list default="true" id="315a87d7-53f2-48de-8a25-559f8ca719ec" name="Changes" comment="19/12/23">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Animal/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecBrussel/AnimalShelter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/AnimalShelter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Animal/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Disease.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Care/Disease.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Animal/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecBrussel/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Animal/Monkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Treatable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Care/Treatable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Vaccinateable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecBrussel/Care/Vaccinateable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +59,7 @@
       <module name="Vaccination" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.intecBrussel.*" />
+          <option name="PATTERN" value="be.intecBrussel.Animal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,6 +82,14 @@
       <option name="presentableId" value="Default" />
       <updated>1702894856894</updated>
     </task>
+    <task id="LOCAL-00001" summary="19/12/23">
+      <created>1702993957414</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702993957414</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,5 +102,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="19/12/23" />
+    <option name="LAST_COMMIT_MESSAGE" value="19/12/23" />
   </component>
 </project>

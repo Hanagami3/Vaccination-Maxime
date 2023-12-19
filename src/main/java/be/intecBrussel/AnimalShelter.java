@@ -1,5 +1,8 @@
 package be.intecBrussel;
 
+import be.intecBrussel.Animal.Animal;
+import be.intecBrussel.Care.Disease;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;

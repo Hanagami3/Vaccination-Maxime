@@ -1,6 +1,4 @@
-package be.intecBrussel;
-
-import java.util.Map;
+package be.intecBrussel.Animal;
 
 public class Monkey extends Animal {
 

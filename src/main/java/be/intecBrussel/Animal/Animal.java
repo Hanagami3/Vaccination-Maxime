@@ -1,4 +1,8 @@
-package be.intecBrussel;
+package be.intecBrussel.Animal;
+
+import be.intecBrussel.Care.Disease;
+import be.intecBrussel.Care.Treatable;
+import be.intecBrussel.Care.Vaccinateable;
 
 import java.util.*;
 

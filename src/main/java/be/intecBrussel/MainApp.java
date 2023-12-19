@@ -1,8 +1,18 @@
 package be.intecBrussel;
 
+import be.intecBrussel.Animal.Animal;
+import be.intecBrussel.Animal.Cat;
+import be.intecBrussel.Animal.Dog;
+import be.intecBrussel.Animal.Monkey;
+import be.intecBrussel.Care.Disease;
+
+import java.util.InputMismatchException;
+import java.util.Random;
+import java.util.Scanner;
+
 public class MainApp {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException{
 
         Animal cat1 = new Cat(16,"Sam", true, true);
         Animal dog1 = new Dog(23,"Voltaire", false, true);
@@ -29,7 +39,7 @@ public class MainApp {
 
 
 
-       System.out.println("----------------------- gesorteerd volgens de naam volgorde ---------------------------");
+       System.out.println("----------------------- Gesorteerd volgens de naam volgorde ---------------------------");
        animalShelter.sortAnimalsByName();
        animalShelter.printAnimals();
 
@@ -39,7 +49,7 @@ public class MainApp {
        cat4.vaccinateAnimal(Disease.POLIO);
 
 
-       System.out.println("\n----------------------- gesorteerd volgens hun natuurlijke volgorde -----------------------");
+       System.out.println("\n----------------------- Gesorteerd volgens hun natuurlijke volgorde -----------------------");
        animalShelter.sortAnimal();
        animalShelter.printAnimals();
 
@@ -49,28 +59,28 @@ public class MainApp {
 
 
         System.out.println("\n----------------------- Dieren die niet gevaccineerd is tegen Polio-----------------------");
-        animalShelter.printAnimalNotVaccinated(Disease.POLIO);
+        animalShelter.printAnimalNotVaccinated(Disease.FLUE);
 
-        System.out.println("\n----------------------- een dier vinden met zijn dierennummer ----------------------- ");
+        System.out.println("\n----------------------- Een dier vinden met zijn dierennummer ----------------------- ");
         System.out.println(animalShelter.findAnimal(12) + "\n");
         System.out.println(animalShelter.findAnimal(5));
 
-        System.out.println("\n--een dier vinden met zijn dierennaam --");
+        System.out.println("\n--Een dier vinden met zijn dierennaam --");
         System.out.println(animalShelter.findAnimal("Ada") + "\n");
         System.out.println(animalShelter.findAnimal("Petra"));
 
-        System.out.println("\n-----------------------een dier zoeken en behandelen met zijn dierennummer-----------------------");
+        System.out.println("\n-----------------------Een dier zoeken en behandelen met zijn dierennummer-----------------------");
         animalShelter.treatAnimal(22);
         animalShelter.treatAnimal(13);
 
-        System.out.println("\n-----------------------een dier zoeken en behandelen met zijn dierennaam-----------------------");
+        System.out.println("\n-----------------------Een dier zoeken en behandelen met zijn dierennaam-----------------------");
         animalShelter.treatAnimal("Voltaire");
         animalShelter.treatAnimal("Bibi");
 
-        System.out.println("\n----------------------- alle dieren behandelen -----------------------");
+        System.out.println("\n----------------------- Alle dieren behandelen -----------------------");
         animalShelter.treatAllAnimal();
 
-        System.out.println("\n-----------------------gesorteerd volgens de age volgorde -----------------------");
+        System.out.println("\n-----------------------Gesorteerd volgens de age volgorde -----------------------");
         animalShelter.sortAnimalsByAge();
         animalShelter.printAnimals();
 
@@ -79,6 +89,37 @@ public class MainApp {
 
         System.out.print("\nHoeveel dieren hebben we in de opvanghuis: ");
         System.out.println(animalShelter.countAnimals());
+
+
+
+
+
+
+        System.out.println("\n\n\n-----------------------Bonus-----------------------");
+
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        int input;
+
+        try {
+            System.out.print("als je een van deze dieren mee naar huis wilt nemen, voer dan het dierennummer in: ");
+            input = scanner.nextInt();
+        }catch (InputMismatchException e){
+            System.out.println("Je voert niet een nummer.\nEr wordt een willekeurig nummer gekozen");
+            input = random.nextInt(10,20);
+        }
+
+        System.out.println("je voert de nummer " + input + " in... Een momentje...");
+        for (int i = 0; i < 5; i++){
+            Thread.sleep(1000);
+            System.out.println("...");
+        }
+        if (animalShelter.findAnimal(input).get().getName().equals("UNKNOWN"))
+            System.out.println("Deze nummer past niet aan een dier");
+        else
+            System.out.println("je kan verlaten met " + animalShelter.findAnimal(input).get().getName() +
+                    "Zorg goed voor dit dier! Tot ziens");
+
 
 
 

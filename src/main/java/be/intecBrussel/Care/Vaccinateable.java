@@ -1,4 +1,4 @@
-package be.intecBrussel;
+package be.intecBrussel.Care;
 
 public interface Vaccinateable {
 
