@@ -43,6 +43,7 @@ public class MainApp {
        animalShelter.sortAnimalsByName();
        animalShelter.printAnimals();
 
+       System.out.println("\n--Vaccination period--");
        cat1.vaccinateAnimal(Disease.POLIO);
        cat2.vaccinateAnimal(Disease.POLIO);
        cat3.vaccinateAnimal(Disease.POLIO);
@@ -53,19 +54,20 @@ public class MainApp {
        animalShelter.sortAnimal();
        animalShelter.printAnimals();
 
+       System.out.println("\n--Vaccination period--");
        monkey1.vaccinateAnimal(Disease.FLUE);
        monkey2.vaccinateAnimal(Disease.FLUE);
        monkey3.vaccinateAnimal(Disease.FLUE);
 
 
-        System.out.println("\n----------------------- Dieren die niet gevaccineerd is tegen Polio-----------------------");
+        System.out.println("\n----------------------- Dieren die niet gevaccineerd is tegen Flue-----------------------");
         animalShelter.printAnimalNotVaccinated(Disease.FLUE);
 
         System.out.println("\n----------------------- Een dier vinden met zijn dierennummer ----------------------- ");
         System.out.println(animalShelter.findAnimal(12) + "\n");
         System.out.println(animalShelter.findAnimal(5));
 
-        System.out.println("\n--Een dier vinden met zijn dierennaam --");
+        System.out.println("\n------------------------Een dier vinden met zijn dierennaam-----------------------");
         System.out.println(animalShelter.findAnimal("Ada") + "\n");
         System.out.println(animalShelter.findAnimal("Petra"));
 
