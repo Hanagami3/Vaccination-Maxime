@@ -1,4 +1,4 @@
-package be.intecBrussel.Animal;
+package be.intecbrussel.Animal;
 
 public class Cat extends Animal {
 
@@ -15,6 +15,15 @@ public class Cat extends Animal {
         this.hasLongNails = hasLongNails;
     }
 
+    /* Hilal
+    public boolean isHasLongNails() {
+        return hasLongNails;
+    }
+
+    public void setHasLongNails(boolean hasLongNails) {
+        this.hasLongNails = hasLongNails;
+    }
+    */
 
     @Override
     public void treatAnimal() {
@@ -24,6 +33,13 @@ public class Cat extends Animal {
         if (hasLongNails)
             hasLongNails = false;
     }
+
+    /* Hilal
+    public void treatAnimal(){
+        super.setClean(true);
+        this.setHasLongNails(false);
+    }
+    */
 
 
     @Override

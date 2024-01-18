@@ -1,8 +1,8 @@
-package be.intecBrussel.Animal;
+package be.intecbrussel.Animal;
 
-import be.intecBrussel.Care.Disease;
-import be.intecBrussel.Care.Treatable;
-import be.intecBrussel.Care.Vaccinateable;
+import be.intecbrussel.Care.Disease;
+import be.intecbrussel.Care.Treatable;
+import be.intecbrussel.Care.Vaccinateable;
 
 import java.util.*;
 
@@ -24,7 +24,8 @@ public abstract class Animal implements Vaccinateable, Treatable, Comparable<Ani
         animalNumber = 0;
         isClean = false;
         isVaccinated = new HashMap<>();
-        setIsVaccinated();
+        setIsVaccinated();                              //animalNumber
+        // Hilal : this(0, "DEFAULT_ANIMAL_NAME", false, -1)
     }
 
 
@@ -35,10 +36,12 @@ public abstract class Animal implements Vaccinateable, Treatable, Comparable<Ani
         this.isClean = isClean;
         isVaccinated = new HashMap<>();
         setIsVaccinated();
+        // Hilal Stream.of(Disease.values())
+                //.forEach((key -> isVaccinated.put(key, false)));
     }
 
 
-    // <editor-fold desc="getters and setters "simple">
+    // <editor-fold desc=" 'simple' getters and setters" >
     public int getAge() {
         return age;
     }
@@ -80,6 +83,11 @@ public abstract class Animal implements Vaccinateable, Treatable, Comparable<Ani
         isVaccinated.put(Disease.HEPATITISA, false);
     }
 
+    /* Hilal
+    public void setIsVaccinated1(Map<Disease, Boolean> isVaccinated){
+        this.isVaccinated = isVaccinated;
+    }
+    */
 
     @Override
     public void vaccinateAnimal(Disease disease) {

@@ -1,10 +1,10 @@
-package be.intecBrussel;
+package be.intecbrussel;
 
-import be.intecBrussel.Animal.Animal;
-import be.intecBrussel.Animal.Cat;
-import be.intecBrussel.Animal.Dog;
-import be.intecBrussel.Animal.Monkey;
-import be.intecBrussel.Care.Disease;
+import be.intecbrussel.Animal.Animal;
+import be.intecbrussel.Animal.Cat;
+import be.intecbrussel.Animal.Dog;
+import be.intecbrussel.Animal.Monkey;
+import be.intecbrussel.Care.Disease;
 
 import java.util.InputMismatchException;
 import java.util.Random;
@@ -20,7 +20,7 @@ public class MainApp {
         Animal monkey2 = new Monkey(-2,"Alex", false, false);
         Animal dog2 = new Dog(5,"Cinnamon", true, true);
         Animal dog3 = new Dog(10, "Gipsy", false, false);
-        Animal monkey3 = new Monkey(32, "Alma", true, true);
+        Animal monkey3 = new Monkey(32, "", true, true);
         Animal cat2 = new Cat(12, "Petra", false, false);
         Animal cat3 = new Cat(3, "Jude", false, true);
         Animal cat4 = new Cat(27, "Praline", true, false);
@@ -51,7 +51,7 @@ public class MainApp {
 
 
        System.out.println("\n----------------------- Gesorteerd volgens hun natuurlijke volgorde -----------------------");
-       animalShelter.sortAnimal();
+       animalShelter.sortAnimals();
        animalShelter.printAnimals();
 
        System.out.println("\n--Vaccination period--");

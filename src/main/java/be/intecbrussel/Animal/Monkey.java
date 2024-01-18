@@ -1,4 +1,4 @@
-package be.intecBrussel.Animal;
+package be.intecbrussel.Animal;
 
 public class Monkey extends Animal {
 
