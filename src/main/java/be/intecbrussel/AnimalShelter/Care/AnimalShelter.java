@@ -1,7 +1,6 @@
-package be.intecbrussel;
+package be.intecbrussel.AnimalShelter.Care;
 
-import be.intecbrussel.Animal.Animal;
-import be.intecbrussel.Care.Disease;
+import be.intecbrussel.animal.Animal;
 
 import java.util.ArrayList;
 import java.util.Comparator;

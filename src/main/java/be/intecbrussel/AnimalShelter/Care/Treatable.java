@@ -1,4 +1,4 @@
-package be.intecbrussel.Care;
+package be.intecbrussel.AnimalShelter.Care;
 
 public interface Treatable {
 

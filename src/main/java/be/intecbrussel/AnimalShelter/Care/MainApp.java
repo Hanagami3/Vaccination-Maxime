@@ -1,10 +1,9 @@
-package be.intecbrussel;
+package be.intecbrussel.AnimalShelter.Care;
 
-import be.intecbrussel.Animal.Animal;
-import be.intecbrussel.Animal.Cat;
-import be.intecbrussel.Animal.Dog;
-import be.intecbrussel.Animal.Monkey;
-import be.intecbrussel.Care.Disease;
+import be.intecbrussel.animal.Animal;
+import be.intecbrussel.animal.Cat;
+import be.intecbrussel.animal.Dog;
+import be.intecbrussel.animal.Monkey;
 
 import java.util.InputMismatchException;
 import java.util.Random;
@@ -24,6 +23,7 @@ public class MainApp {
         Animal cat2 = new Cat(12, "Petra", false, false);
         Animal cat3 = new Cat(3, "Jude", false, true);
         Animal cat4 = new Cat(27, "Praline", true, false);
+        Animal cat5 = new Cat(27, "Praline", true, false);
 
        AnimalShelter animalShelter = new AnimalShelter();
        animalShelter.addAnimal(cat1);
@@ -36,6 +36,7 @@ public class MainApp {
        animalShelter.addAnimal(cat2);
        animalShelter.addAnimal(cat3);
        animalShelter.addAnimal(cat4);
+       animalShelter.addAnimal(cat5);
 
 
 
@@ -91,6 +92,10 @@ public class MainApp {
 
         System.out.print("\nHoeveel dieren hebben we in de opvanghuis: ");
         System.out.println(animalShelter.countAnimals());
+
+        System.out.println(animalShelter.findAnimal("Praline"));
+
+
 
 
 

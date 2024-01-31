@@ -1,0 +1,14 @@
+@startuml
+
+user -> frontend
+frontend -> backend_controller
+backend_controller -> backend_service
+backend_service -> backend_repository
+backend_repository -> database
+database -> backend_repository
+backend_repository -> backend_service
+backend_service -> backend_controller
+backend_controller -> frontend
+frontend -> user
+
+@enduml

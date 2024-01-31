@@ -1,4 +1,4 @@
-package be.intecbrussel.Animal;
+package be.intecbrussel.animal;
 
 public class Dog extends Animal {
 

@@ -1,0 +1,26 @@
+@startuml
+
+start
+
+:user provides sorting method by name or age;
+:system retrieves the animals;
+if (sorting by name) then (yes)
+    :system sorts the animals by name;
+    stop;
+else (no, sort by age)
+    :system sorts the animals by age;
+    stop;
+
+@enduml
+
+repeat
+:user provide sorting method by name or age;
+
+niet nodig
+repeat while(user inputs valid sorting method) is (no)
+-> yes;
+
+if(userinput is valid) then (no)
+:return error message
+
+retrieves animals avant du choix du type de triage

@@ -1,0 +1,20 @@
+@startuml
+
+User -> AnimalShelterApp : input name
+AnimalShelterApp -> AnimalService : findAllAnimalsByName(String:name)
+AnimalService -> AnimalRepository : stream.filter(name)
+
+AnimalService <-- AnimalRepository : list<Animal>
+
+alt null
+AnimalShelterApp <-- AnimalService : void
+User <-- AnimalShelterApp : error message
+
+else at least 1
+AnimalShelterApp <-- AnimalService : list<Animal>
+User <-- AnimalShelterApp : list<Animal>
+
+end
+
+
+@enduml

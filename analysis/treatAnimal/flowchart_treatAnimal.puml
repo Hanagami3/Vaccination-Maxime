@@ -1,0 +1,26 @@
+@startuml
+
+start
+
+:user provides the animal to treat by name or id;
+
+if(user inputs name) then (yes)
+    :system retrieves animal by name;
+    if(is the animal found) then (yes);
+        :clean the animal;
+        :vaccinate the animal;
+        stop
+    else(no)
+        :error no animal found;
+        end
+    endif
+else(no, uses ID)
+    :system retrieves animal by ID;
+    if(is the animal found) then (yes);
+    :clean the animal;
+    :vaccinate the animal;
+    stop
+    else(no)
+    :error no animal found;
+    end
+@enduml

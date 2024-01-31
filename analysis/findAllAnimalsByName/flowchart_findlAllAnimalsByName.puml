@@ -1,0 +1,14 @@
+@startuml
+
+start
+
+:user inputs name;
+:system retrieves animal by name;
+
+if (are there animal(s)) then (yes)
+    :returns the found animal(s);
+    stop
+else(no)
+    : error no animal found;
+    end
+@enduml

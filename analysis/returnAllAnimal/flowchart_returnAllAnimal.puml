@@ -1,0 +1,10 @@
+@startuml
+
+start
+: The user requests to return all animals;
+: System retrieves all animals;
+: System returns all animals;
+stop
+
+
+@enduml

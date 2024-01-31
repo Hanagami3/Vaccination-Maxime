@@ -1,0 +1,22 @@
+@startuml
+
+User -> AnimalShelterApp : input name or age
+AnimalShelterApp -> AnimalService : sortAnimalShelter(SortType: sortType)
+AnimalService -> AnimalRepository : getAnimals()
+AnimalService <-- AnimalRepository : List<Animal>
+
+alt Sorting by name
+AnimalService -> AnimalService : sortAnimalsByName(List<Animal>)
+
+else Sorting by age
+AnimalService -> AnimalService : sortAnimalsByAge(List<Animal>)
+
+end
+
+AnimalShelterApp <-- AnimalService : void
+User <-- AnimalShelterApp : OK message
+@enduml
+
+c'est tout car on ne demande rien d'autre.
+
+sortType = enum

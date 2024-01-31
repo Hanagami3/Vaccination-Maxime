@@ -1,0 +1,15 @@
+@startuml
+
+User -> AnimalShelterApp : User request
+AnimalShelterApp -> AnimalService : getAllAnimalsSortedByName()
+AnimalService -> AnimalRepository : getAnimals()
+
+note right of AnimalRepository : null !!
+
+AnimalService <-- AnimalRepository : List<Animal>:animals
+AnimalService -> AnimalService : sortAnimalByName(List<Animal>:animals)
+
+AnimalShelterApp <-- AnimalService : List<Animal>:AnimalsSorted
+User <-- AnimalShelterApp : List<Animal>:AnimalsSorted
+
+@enduml

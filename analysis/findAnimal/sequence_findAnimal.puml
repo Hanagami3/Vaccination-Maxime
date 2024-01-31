@@ -1,0 +1,29 @@
+@startuml
+
+User -> AnimalShelterApp : input name or ID
+
+alt treat by name
+AnimalShelterApp -> AnimalService : findAnimal(String:name)
+AnimalService -> AnimalRepository : stream.filter(name)
+
+alt more than 1
+AnimalService <-- AnimalRepository : list<Animal>
+AnimalShelterApp <-- AnimalService : void
+User <-- AnimalShelterApp : error message
+end
+
+else treat by ID
+AnimalShelterApp -> AnimalService : findAnimal(int:id)
+AnimalService -> AnimalRepository : getId
+end
+
+AnimalService <-- AnimalRepository : optional<Animal>
+
+alt IsEmpty
+AnimalShelterApp <-- AnimalService : void
+User <-- AnimalShelterApp : error message
+else IsPresent
+AnimalShelterApp <-- AnimalService : Animal
+User <-- AnimalShelterApp : Animal
+end
+@enduml

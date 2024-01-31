@@ -1,0 +1,25 @@
+@startuml
+
+left to right direction
+Rectangle Actors{
+    actor User as u
+}
+Package usescases{
+    usecase "add animal to shelter" as add
+    usecase "treat animals"  as treat
+    usecase "sort animal" as sort
+    usecase "return all animals" as getAll
+    usecase "find an animal" as get
+    usecase "find all animals by name" as getName
+    usecase "get all animals sorted by name" as getsortname
+}
+
+u --> add
+u --> treat
+u --> sort
+u --> getAll
+u --> get
+u --> getName
+u --> getsortname
+
+@enduml

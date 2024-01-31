@@ -1,0 +1,22 @@
+@startuml
+
+User -> AnimalShelterApp : input name or age
+
+alt treat by name
+AnimalShelterApp -> AnimalService : treatAnimal(String:name)
+AnimalService -> AnimalRepository : getName
+
+else treat by ID
+AnimalShelterApp -> AnimalService : treatAnimal(int:id)
+AnimalService -> AnimalRepository : getId
+
+end
+
+AnimalService <--AnimalRepository : Animal
+AnimalService -> AnimalService : treatAnimal()\n- clean\n- vaccinate
+
+AnimalShelterApp <-- AnimalService : void
+User <-- AnimalShelterApp : OK message
+
+
+@enduml

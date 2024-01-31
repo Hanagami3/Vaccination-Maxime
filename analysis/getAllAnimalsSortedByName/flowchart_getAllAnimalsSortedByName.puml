@@ -1,0 +1,9 @@
+@startuml
+
+start
+: The user requests to sort all animals by name;
+: System retrieves all animals;
+: System sorts all animal by name;
+: System returns all animal sorted;
+
+@enduml
