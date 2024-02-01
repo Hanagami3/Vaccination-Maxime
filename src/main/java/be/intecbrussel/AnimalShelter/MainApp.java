@@ -1,9 +1,10 @@
-package be.intecbrussel.AnimalShelter.Care;
+package be.intecbrussel.AnimalShelter;
 
-import be.intecbrussel.animal.Animal;
-import be.intecbrussel.animal.Cat;
-import be.intecbrussel.animal.Dog;
-import be.intecbrussel.animal.Monkey;
+import be.intecbrussel.AnimalShelter.Care.Disease;
+import be.intecbrussel.AnimalShelter.animal.Animal;
+import be.intecbrussel.AnimalShelter.animal.Cat;
+import be.intecbrussel.AnimalShelter.animal.Dog;
+import be.intecbrussel.AnimalShelter.animal.Monkey;
 
 import java.util.InputMismatchException;
 import java.util.Random;

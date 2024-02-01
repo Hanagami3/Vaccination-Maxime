@@ -1,0 +1,38 @@
+@startuml
+class Animal{
+- name : String
+- age : int
+- id : long
+__ constructor__
++ Animal(name:String, age:int, id:long)
+__methods__
++ getName()
++ setName(name:String)
++ getAge()
++ setAge(age:int)
++ getId()
++ setId(id:long)
+}
+
+enum SortType{
+NAME
+AGE
+}
+
+class AnimalService{
+- animalRepository : AnimalRepository
+__ constructor__
++ animalService(animalRepository:AnimalRepository)
+__methods__
++ sortAnimalShelter(sortType:SortType) : void
+- sortAnimalByName(animalList:List<Animal>) : void
+- sortAnimalByAge(animalList:List<Animal>) : void
+}
+
+class AnimalRepository{
+- shelterAnimals : List<Animal>
++ getAnimals() : List<Animal>
++ addAnimals() : boolean
+}
+
+@enduml

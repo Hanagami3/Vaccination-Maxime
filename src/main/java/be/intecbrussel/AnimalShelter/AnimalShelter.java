@@ -1,6 +1,7 @@
-package be.intecbrussel.AnimalShelter.Care;
+package be.intecbrussel.AnimalShelter;
 
-import be.intecbrussel.animal.Animal;
+import be.intecbrussel.AnimalShelter.Care.Disease;
+import be.intecbrussel.AnimalShelter.animal.Animal;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -301,7 +302,6 @@ public class AnimalShelter1 {
         animals.add(animal);
         animal.setAnimalNumber(animalId);
         animalId+=1;
-
     }
 
 

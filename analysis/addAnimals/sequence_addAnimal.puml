@@ -2,16 +2,16 @@
 
 User -> AnimalShelterApp : input animal
 AnimalShelterApp -> AnimalService : addAnimal(Animal: animal)
-AnimalService -> AnimalRepository : getAnimal()
+AnimalService -> AnimalRepository : addAnimal(Animal : animal)
 
 alt already in the shelter
-AnimalService <-- AnimalRepository : Animal
-AnimalShelterApp <-- AnimalService : void
+AnimalService <-- AnimalRepository : error
+AnimalShelterApp <-- AnimalService : error
 User <-- AnimalShelterApp : error message
 
 else not in the shelter
-AnimalService <-- AnimalRepository : null
-AnimalService -> AnimalRepository : addAnimal()
+
+AnimalService <-- AnimalRepository :  void
 AnimalShelterApp <-- AnimalService : void
 User <-- AnimalShelterApp : ok message
 

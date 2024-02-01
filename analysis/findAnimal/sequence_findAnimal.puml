@@ -4,11 +4,11 @@ User -> AnimalShelterApp : input name or ID
 
 alt treat by name
 AnimalShelterApp -> AnimalService : findAnimal(String:name)
-AnimalService -> AnimalRepository : stream.filter(name)
+AnimalService -> AnimalRepository : findAnimal(String:name)
 
 alt more than 1
 AnimalService <-- AnimalRepository : list<Animal>
-AnimalShelterApp <-- AnimalService : void
+AnimalShelterApp <-- AnimalService : list<Animal>
 User <-- AnimalShelterApp : error message
 end
 
@@ -20,7 +20,7 @@ end
 AnimalService <-- AnimalRepository : optional<Animal>
 
 alt IsEmpty
-AnimalShelterApp <-- AnimalService : void
+AnimalShelterApp <-- AnimalService : error
 User <-- AnimalShelterApp : error message
 else IsPresent
 AnimalShelterApp <-- AnimalService : Animal

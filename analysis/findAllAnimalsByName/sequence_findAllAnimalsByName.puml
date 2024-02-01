@@ -2,7 +2,7 @@
 
 User -> AnimalShelterApp : input name
 AnimalShelterApp -> AnimalService : findAllAnimalsByName(String:name)
-AnimalService -> AnimalRepository : stream.filter(name)
+AnimalService -> AnimalRepository : findAllAnimalsByName(String:name)
 
 AnimalService <-- AnimalRepository : list<Animal>
 

@@ -1,22 +1,27 @@
 @startuml
-
-User -> AnimalShelterApp : input name or age
+User -> AnimalShelterApp : input name or id
 
 alt treat by name
 AnimalShelterApp -> AnimalService : treatAnimal(String:name)
-AnimalService -> AnimalRepository : getName
+AnimalService -> AnimalRepository : getAnimal(String:name)
+note right of AnimalRepository : is merdere name?
 
 else treat by ID
 AnimalShelterApp -> AnimalService : treatAnimal(int:id)
-AnimalService -> AnimalRepository : getId
+AnimalService -> AnimalRepository : getAnimal((int:id)
 
 end
 
-AnimalService <--AnimalRepository : Animal
-AnimalService -> AnimalService : treatAnimal()\n- clean\n- vaccinate
+AnimalService <--AnimalRepository : optional<Animal>
 
+alt isPresent
+AnimalService -> AnimalService : treatAnimal()
+note right of AnimalService : - clean()\n- vaccinate
 AnimalShelterApp <-- AnimalService : void
 User <-- AnimalShelterApp : OK message
 
-
+else isEmpty
+AnimalShelterApp <-- AnimalService : error
+User <-- AnimalShelterApp : error message
+end
 @enduml

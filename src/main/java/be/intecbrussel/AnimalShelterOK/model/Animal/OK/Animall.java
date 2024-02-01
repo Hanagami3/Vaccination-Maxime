@@ -2,22 +2,22 @@ package be.intecbrussel.AnimalShelterOK.model.Animal.OK;
 
 public class Animall {
 
-    String Name;
-    int age;
-    int id;
+    private String name;
+    private int age;
+    private long id;
 
     public Animall(String name, int age, int id) {
-        Name = name;
+        this.name = name;
         this.age = age;
         this.id = id;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public int getAge() {
@@ -28,7 +28,7 @@ public class Animall {
         this.age = age;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 

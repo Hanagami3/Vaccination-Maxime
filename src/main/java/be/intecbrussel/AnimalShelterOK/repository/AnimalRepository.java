@@ -15,8 +15,28 @@ public class AnimalRepository {
         shelterAnimals.add(new Animall("PotatoSalad", 30, 3));
         shelterAnimals.add(new Animall("Anastasia", 3, 4));
     }
-
     public List<Animall> getAnimals(){
         return shelterAnimals;
     }
+
+
+    /*
+    public List<Animall> getAnimals(){
+
+        if (shelterAnimals.contains(new Animall())){
+            throw new RuntimeException("animal already exist");
+        }
+        return shelterAnimals;
+    }
+
+    boolean addAnimal(Animall animall){
+        if (shelterAnimals.contains(animall)){
+            return false;
+        }
+        shelterAnimals.add(animall);
+        return true;
+    }
+     */
+
+
 }

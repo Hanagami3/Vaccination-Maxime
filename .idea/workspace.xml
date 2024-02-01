@@ -4,43 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="315a87d7-53f2-48de-8a25-559f8ca719ec" name="Changes" comment="18/12/23">
-      <change afterPath="$PROJECT_DIR$/analysis/UseCaseDiagram.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/addAnimals/flowchart_addAnimals.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/addAnimals/sequence_addAnimal.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/findAllAnimalsByName/flowchart_findlAllAnimalsByName.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/findAllAnimalsByName/sequence_findAllAnimalsByName.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/findAnimal/flowchart_findAnimal.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/findAnimal/flowchart_findAnimalOK.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/findAnimal/sequence_findAnimal.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/flowchart_example.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/getAllAnimalsSortedByName/flowchart_getAllAnimalsSortedByName.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/getAllAnimalsSortedByName/sequence_getAllAnimalsSortedByName.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/returnAllAnimal/flowchart_returnAllAnimal.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/returnAllAnimal/sequence_returneAllAnimal.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/sequence_général.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/sortAnimal/flowchart_sortAnimal.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/sortAnimal/sequence_sortAnimal.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/treatAnimal/flowchart_treatAnimal.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/treatAnimal/flowchart_treatAnimalOK.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/treatAnimal/sequence_treatAnimal.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelterOK/AnimalShelterAppOK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelterOK/model/Animal/OK/Animall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelterOK/model/Animal/OK/SortType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelterOK/repository/AnimalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelterOK/service/AnimalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="315a87d7-53f2-48de-8a25-559f8ca719ec" name="Changes" comment="31/12/23">
+      <change afterPath="$PROJECT_DIR$/analysis/ZExample/flowchart_findAnimal_Ex.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analysis/classUML.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Animal/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/animal/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Animal/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/animal/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Animal/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/animal/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Animal/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/animal/Monkey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/Care/AnimalShelter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Care/Disease.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/Care/Disease.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Care/Treatable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/Care/Treatable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Care/Vaccinateable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/Care/Vaccinateable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/Care/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/be/intecbrussel/care/AnimalShelterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/intecbrussel/AnimalShelterOK/care/AnimalShelterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/addAnimals/sequence_addAnimal.puml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/addAnimals/sequence_addAnimal.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/findAllAnimalsByName/sequence_findAllAnimalsByName.puml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/findAllAnimalsByName/sequence_findAllAnimalsByName.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/findAnimal/flowchart_findAnimal.puml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/findAnimal/flowchart_findAnimal.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/findAnimal/flowchart_findAnimalOK.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/findAnimal/sequence_findAnimal.puml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/findAnimal/sequence_findAnimal.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/flowchart_example.puml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/ZExample/flowchart_example.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/getAllAnimalsSortedByName/flowchart_getAllAnimalsSortedByName.puml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/getAllAnimalsSortedByName/flowchart_getAllAnimalsSortedByName.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/getAllAnimalsSortedByName/sequence_getAllAnimalsSortedByName.puml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/getAllAnimalsSortedByName/sequence_getAllAnimalsSortedByName.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/returnAllAnimal/sequence_returneAllAnimal.puml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/returnAllAnimal/sequence_returneAllAnimal.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/sequence_général.puml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/ZExample/sequence_général.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/treatAnimal/flowchart_treatAnimalOK.puml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/ZExample/flowchart_treatAnimalOK.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/treatAnimal/sequence_treatAnimal.puml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/treatAnimal/sequence_treatAnimal.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/Care/AnimalShelter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/AnimalShelter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/Care/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelterOK/model/Animal/OK/Animall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelterOK/model/Animal/OK/Animall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelterOK/repository/AnimalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelterOK/repository/AnimalRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelterOK/service/AnimalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelterOK/service/AnimalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/animal/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/animal/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/animal/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/animal/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/animal/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/animal/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/animal/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/animal/Monkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/intecbrussel/AnimalShelterOK/care/AnimalShelterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/intecbrussel/AnimalShelterOK/care/AnimalShelterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,14 +74,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\intec\IdeaProjects\Vaccination\analysis\findAnimal" />
+      <recent name="C:\Users\intec\IdeaProjects\Vaccination\analysis\ZExample" />
       <recent name="C:\Users\intec\IdeaProjects\Vaccination\analysis\returnAllAnimal" />
       <recent name="C:\Users\intec\IdeaProjects\Vaccination\analysis\treatAnimal" />
       <recent name="C:\Users\intec\IdeaProjects\Vaccination\analysis\sortAnimal" />
-      <recent name="C:\Users\intec\IdeaProjects\Vaccination\analysis\findAnimal" />
-      <recent name="C:\Users\intec\IdeaProjects\Vaccination\analysis\addAnimals" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.be.intecbrussel.AnimalShelter.Care.MainApp">
+  <component name="RunManager" selected="Application.AnimalShelterAppOK">
     <configuration name="AnimalShelterAppOK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.intecbrussel.AnimalShelterOK.AnimalShelterAppOK" />
       <module name="Vaccination" />
@@ -126,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="be.intecbrussel.AnimalShelter.Care.MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.intecbrussel.AnimalShelter.Care.MainApp" />
+    <configuration name="be.intecbrussel.AnimalShelter.MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.intecbrussel.AnimalShelter.MainApp" />
       <module name="Vaccination" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.intecbrussel.AnimalShelter.Care.*" />
+          <option name="PATTERN" value="be.intecbrussel.AnimalShelter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,8 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.be.intecbrussel.AnimalShelter.Care.MainApp" />
         <item itemvalue="Application.AnimalShelterAppOK" />
+        <item itemvalue="Application.be.intecbrussel.AnimalShelter.MainApp" />
         <item itemvalue="Application.MainApp" />
         <item itemvalue="JUnit.AnimalShelterTest" />
         <item itemvalue="Application.MainAnimal" />
@@ -201,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705588731842</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="31/12/23">
+      <created>1706712914379</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706712914379</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,15 +214,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="19/12/23" />
     <MESSAGE value="18/12/23" />
-    <option name="LAST_COMMIT_MESSAGE" value="18/12/23" />
+    <MESSAGE value="31/12/23" />
+    <option name="LAST_COMMIT_MESSAGE" value="31/12/23" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/Care/MainApp.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/be/intecbrussel/AnimalShelter/MainApp.java</url>
           <line>14</line>
-          <properties class="be.intecbrussel.AnimalShelterOK.MainApp" method="main">
+          <properties class="be.intecbrussel.AnimalShelter.Care.MainApp">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

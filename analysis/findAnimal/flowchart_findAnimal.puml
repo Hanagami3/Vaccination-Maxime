@@ -1,28 +1,29 @@
 @startuml
 
-: user provides a data;
-
-if (find by name) then (yes)
-    :system look for the name in the animalsList;
-
-    if(animal found) then (yes)
-        :system return the animal;
+start
+:user inputs name or id animal;
+if(user inputs name) then (yes)
+   :system retrieves animal by name;
+   if (are there animals) then (yes)
+        if (is there more than 1 animal) then (yes);
+            :error too many animals;
+            end;
+        else (no)
+        endif
+   else(no)
+        :error no animals found;
         end;
+   endif
+else(no, uses id)
+    :system retrieves animal by id;
+    if (is the animal found) then (yes)
     else (no)
-        : the animal bestaat niet in the shelter;
+        :error no animals found;
         end;
-    endif
-else (no)
-   if(find by IDNumber) then (yes)
-    :system look at for animal by IDNumber in the animalsList;
-    if(animal found) then (yes)
-        :system return the animal;
-        end;
-    else (no)
-        : the animal bestaat niet in the shelter;
-        end;
-    endif
-    else(no)
-     :error can only by name or IDNumber;
-        end;
+    endif;
+endif
+:return the found animal;
+stop;
 @enduml
+
+le plus lisible serait d'avoir une répétition de chaque côté.

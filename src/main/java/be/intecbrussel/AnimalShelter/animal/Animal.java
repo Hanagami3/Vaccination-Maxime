@@ -1,4 +1,4 @@
-package be.intecbrussel.animal;
+package be.intecbrussel.AnimalShelter.animal;
 
 import be.intecbrussel.AnimalShelter.Care.Vaccinateable;
 import be.intecbrussel.AnimalShelter.Care.Disease;

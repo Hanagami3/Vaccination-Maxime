@@ -4,7 +4,7 @@ User -> AnimalShelterApp : User request
 AnimalShelterApp -> AnimalService : getAllAnimalsSortedByName()
 AnimalService -> AnimalRepository : getAnimals()
 
-note right of AnimalRepository : null !!
+note right of AnimalRepository : leeg lijst!!
 
 AnimalService <-- AnimalRepository : List<Animal>:animals
 AnimalService -> AnimalService : sortAnimalByName(List<Animal>:animals)

@@ -1,10 +1,10 @@
 package be.intecbrussel.AnimalShelterOK.care;
 
-import be.intecbrussel.animal.Animal;
-import be.intecbrussel.animal.Cat;
-import be.intecbrussel.animal.Dog;
-import be.intecbrussel.animal.Monkey;
-import be.intecbrussel.AnimalShelter.Care.AnimalShelter;
+import be.intecbrussel.AnimalShelter.animal.Animal;
+import be.intecbrussel.AnimalShelter.animal.Cat;
+import be.intecbrussel.AnimalShelter.animal.Dog;
+import be.intecbrussel.AnimalShelter.animal.Monkey;
+import be.intecbrussel.AnimalShelter.AnimalShelter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

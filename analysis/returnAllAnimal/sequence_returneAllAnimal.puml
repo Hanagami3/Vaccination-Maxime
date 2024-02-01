@@ -4,8 +4,8 @@ User -> AnimalShelterApp : User request
 AnimalShelterApp -> AnimalService : getAllAnimals()
 AnimalService -> AnimalRepository : getAnimals()
 
-AnimalService <-- AnimalRepository : List<Animal>
-AnimalShelterApp <-- AnimalService : List<Animal>
-User <-- AnimalShelterApp : List<Animal>
+AnimalService <-- AnimalRepository : List<Animal> animals
+AnimalShelterApp <-- AnimalService : List<Animal> animals
+User <-- AnimalShelterApp : List<Animal> animals
 
 @enduml

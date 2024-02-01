@@ -1,4 +1,4 @@
-package be.intecbrussel.animal;
+package be.intecbrussel.AnimalShelter.animal;
 
 public class Monkey extends Animal {
 
